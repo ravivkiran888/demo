@@ -3,3 +3,14 @@ spring:
     name: docker-demo
 server:
   port: 8081
+  
+datasource:
+    url: jdbc:postgresql://production-postgres-db.cfm46uweg9oi.ap-south-1.rds.amazonaws.com:5432/appdb
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
