@@ -9,6 +9,6 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello() {
-        return "Hello from Spring Boot running on AWS!";
+        return "Hello from Spring Boot running on AWS Updated One!";
     }
 }
